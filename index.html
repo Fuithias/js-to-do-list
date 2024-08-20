@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body class="scrollbar">
+    <div class="wrapper">
+      <button type="button" class="btn theme">theme</button>
+      <main>
+        <section id="to-do-list">
+          <h1>To-Do List</h1>
+          <div class="container">
+            <label for="task"><strong>Task:</strong></label>
+            <input id="task" type="text" placeholder="New task" aria-label="Task">
+            <button type="submit" class="btn add">Submit</button>
+          </div>
+          <div class="tasks-container scrollbar" aria-live="polite"></div>
+          <button type="button" class="btn clear">Clear</button>
+        </section>
+      </main>
+    </div>
+    <script src="./index.js" type="text/javascript" defer></script>
+  </body>
+</html>
